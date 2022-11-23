@@ -1,0 +1,6 @@
+* {
+    background-image: url(assets/back.jpg);
+    background-size: cover;
+    color: red;
+    background-image opacity: 0.9;
+}
