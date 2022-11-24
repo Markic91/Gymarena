@@ -51,7 +51,6 @@ header {
 }
 
 .nopain {
-    transform: rotate(-10deg);
     display: flex;
     justify-content: center;
     color: white;
@@ -60,7 +59,6 @@ header {
 }
  
 .nogain {
-    transform: rotate(-10deg);
     display: flex;
     justify-content: center;
     color: white;
@@ -87,7 +85,7 @@ header {
     justify-content: space-around;
     color: white;
     font-size: 1.5rem;
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 .trouvez {
