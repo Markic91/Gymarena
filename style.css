@@ -35,6 +35,7 @@ h1 {
 .navbarre li a {
     color: black;
     font-size: 20px;
+    text-shadow: white 1px 1px 12px;;
 }
 
 .navbarre li a:hover{
@@ -74,6 +75,7 @@ header {
 
 .avaibality {
     background-color: #CD3545;
+    border-radius: 2px;
 }
 
 .conceptcontainer ol {
