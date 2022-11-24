@@ -2,6 +2,7 @@
     font-family: 'Oswald', sans-serif;
     margin: 0;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 .gym {
@@ -15,21 +16,19 @@
 h1 {
     font-size: 3rem;
     background-color: black;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .navbarre {
     list-style: none;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 80%;
 }
 
 .head {
     display: flex;
-}
-
-.navbarre li {
-    margin-left: 8rem;
 }
 
 .navbarre li a {
@@ -55,6 +54,7 @@ header {
     justify-content: center;
     color: white;
     font-size: 9rem;
+    height: 30vh
 }
  
 .nogain {
@@ -62,6 +62,7 @@ header {
     justify-content: center;
     color: white;
     font-size: 9rem;
+    height: 30vh;
 }
 
 .promocontainer {
@@ -81,14 +82,7 @@ header {
 .conceptcontainer ol {
     display: flex;
     justify-content: space-around;
-    margin-top: 4.5rem;
     color: white;
     font-size: 1.5rem;
+    margin-top: 4%;
 }
-
-
-
-
-
-
-
