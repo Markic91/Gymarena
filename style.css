@@ -88,7 +88,7 @@ header {
     margin-top: 5%;
 }
 
-.trouvez {
+.bigTitle {
     color: white;
     font-size: 7rem;
     display: flex;
@@ -102,7 +102,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); 
-    gap: 60px;  
+    gap: 50px;  
     padding: 90px;
 }
 
@@ -112,12 +112,10 @@ header {
     justify-content: center;
     align-items: center ;
     height: 50vh;
-   
     background-image: url(assets/salle1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 8rem;
-    color: white;
 }
 
 .div2 {
@@ -126,7 +124,6 @@ header {
     justify-content: center;
     align-items: center ;
     height: 50vh;
-    
     background-image: url(assets/salle2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,7 +159,20 @@ header {
     color: white;
 }
 
+.grid-container .div1 a, .div2 a, .div3 a, .div4 a{
+    color: white;
+}
+
 .footer {
     background-color: #CD3545;
     height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.info1 {
+    height: 50vh;
 }
