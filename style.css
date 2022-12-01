@@ -128,7 +128,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 8rem;
-    color: white;
 }
 
 .div3 {
@@ -167,12 +166,15 @@ header {
 
 .footer {
     background-color: #CD3545;
-    height: 8vh;
+    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.fa-brands {
+margin-left: 8rem;
 }
 
 .salleInfo {
@@ -211,8 +213,7 @@ header {
     align-items: center;
 }
 
-.photoSalle1 {
+.photoSalle {
     height: 90vh;
     width: 45vw;
 }
-
