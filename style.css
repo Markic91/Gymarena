@@ -174,7 +174,7 @@ header {
 }
 
 .fa-brands {
-margin-left: 8rem;
+    margin-left: 8rem;
 }
 
 .salleInfo {
@@ -187,12 +187,12 @@ margin-left: 8rem;
 .info1 {
     grid-area: 1 / 1 / 2 / 2;
     height: 50vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   justify-content: space-around;
-   font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
 }
 
 .info2 {
@@ -216,4 +216,62 @@ margin-left: 8rem;
 .photoSalle {
     height: 90vh;
     width: 45vw;
+}
+
+.planning-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planning-array {
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.800);
+}
+
+td {
+    border: 1px solid;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+}
+
+.day {
+    background-color: #CD3545;
+}
+
+.cours {
+    color: white;
+}
+
+.formules-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formule1, .formule2, .formule3 {
+    height: 95vh;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.800);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+
+.tformule {
+    background-color: #CD3545;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.prix {
+    font-size: 6rem;
 }
