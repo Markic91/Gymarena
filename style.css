@@ -219,7 +219,7 @@ header {
 }
 
 .planning-container {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,14 +227,18 @@ header {
 
 .planning-array {
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.800);
+    border-collapse: collapse;
+    background-image: url(assets/background-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 td {
-    border: 1px solid;
     text-align: center;
     height: 10vh;
     width: 10vw;
+    border: solid 4px black;
+    font-size: 1.6rem;
 }
 
 .day {
@@ -243,6 +247,18 @@ td {
 
 .cours {
     color: white;
+}
+
+.gym-array {
+    color: #CD3545;
+}
+
+.arena-array {
+    color: white;
+}
+
+.back-array {
+    background-color: black;
 }
 
 .formules-container {
@@ -273,5 +289,5 @@ td {
 }
 
 .prix {
-    font-size: 6rem;
+    font-size: 3rem;
 }
