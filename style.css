@@ -174,7 +174,7 @@ header {
 }
 
 .fa-brands {
-    margin-left: 8rem;
+    margin: 3rem;
 }
 
 .salleInfo {
@@ -268,7 +268,9 @@ td {
     align-items: center;
 }
 
-.formule1, .formule2, .formule3 {
+.formule1,
+.formule2,
+.formule3 {
     height: 95vh;
     width: 20vw;
     background-color: rgba(0, 0, 0, 0.800);
@@ -290,4 +292,48 @@ td {
 
 .prix {
     font-size: 3rem;
+}
+
+.basics-move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 5rem;
+}
+
+.bonus-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tv-container {
+    height: 80vh;
+    width: 20vw;
+}
+
+.video {
+    height: 30%;
+    background-color: blue;
+}
+
+.text {
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.800);
+}
+
+.title-bonus {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.txt-bonus {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 15%;
 }
