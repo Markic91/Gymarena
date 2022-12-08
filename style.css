@@ -5,25 +5,17 @@
     box-sizing: border-box;
 }
 
-header {
+.header {
     background-image: url(assets/back6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.header {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 100vh;
-    width: 100vw;
+    grid-template-columns: repeat(6, 16.65vw);
+    grid-template-rows: 10vh repeat(3, 27vh) 9vh;
 }
 
 .t-upleft {
     grid-area: 1 / 1 / 2 / 2;
-    height: 10vh;
-    width: 15vw;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -42,13 +34,16 @@ header {
 
 .navbarre {
     grid-area: 1 / 2 / 2 / 7;
-    height: 10vh;
-    width: 85vw;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+}
+
+.background-nav {
+    grid-area: 1 / 2 / 1 / 7
+    background-color: black;
 }
 
 .menu-content {
@@ -58,7 +53,6 @@ header {
 
 .nopain {
     grid-area: 2 / 3 / 3 / 5;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +72,6 @@ header {
 
 .nogain {
     grid-area: 3 / 3 / 4 / 5;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,9 +91,9 @@ header {
 
 .promo {
     grid-area: 4 / 6 / 5 / 7;
-    height: 20vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -112,6 +105,7 @@ header {
 .tpromo1 {
     color: white;
     background-color: #CD3545;
+    font-size: 1rem;
     border-radius: 3px;
 }
 
@@ -129,16 +123,23 @@ header {
 }
 
 .header-rest {
-    display: flex;
+    background-image: url(assets/back6.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(6, 16.65vw);
+    grid-template-rows: 10vh repeat(4, 22.5vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .big-title {
-    display: flex;
-   justify-content: center;
-   align-items: flex-end;
-   height: 85vh;
+   grid-area: 5 / 2 / 6 / 6;
    font-size: 6rem;
    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .navbarre .menu-content a {
@@ -150,11 +151,12 @@ header {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-    padding: 90px;
+display: grid;
+grid-template-columns: 45vw 45vw;
+grid-template-rows: 45vh 45vh;
+justify-content: center;
+gap: 5rem;
+padding: 4.5rem;
 }
 
 .div1 {
@@ -162,7 +164,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     background-image: url(assets/salle1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -174,7 +175,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     background-image: url(assets/salle2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,8 +186,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-
     background-image: url(assets/salle3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,7 +198,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     background-image: url(assets/lyon4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,25 +227,22 @@ header {
 
 .salleInfo {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 50vh);
 }
 
 .info1 {
     grid-area: 1 / 1 / 2 / 2;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .info2 {
     grid-area: 2 / 1 / 3 / 2;
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,22 +252,25 @@ header {
     grid-area: 1 / 2 / 3 / 3;
     display: flex;
     justify-content: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+iframe {
+    height: 40vh;
+    width: 45vw;
+}
 .photoSalle {
-    height: 90vh;
+    height: 70vh;
     width: 45vw;
 }
 
 .planning-container {
     height: 100vh;
+    width: 98vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
 
 .planning-array {
@@ -354,7 +351,7 @@ td {
 }
 
 .bonus-container {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -362,7 +359,7 @@ td {
 }
 
 .tv-container {
-    height: 80vh;
+    height: 50vh;
     width: 20vw;
 }
 
@@ -377,7 +374,7 @@ td {
 }
 
 .title-bonus {
-    color: white;
+    color: #CD3545;
     font-size: 2rem;
     text-align: center;
 }
@@ -389,7 +386,189 @@ td {
     padding-top: 15%;
 }
 
-.iframe {
+.iframe1 {
     height: 100%;
     width: 100%;
 }
+
+@media screen and (max-width:1730px) {
+    .info1 {
+        font-size: 1.3rem;
+    }
+    .tformule{
+        font-size: 1.5rem;
+    }
+    .txt-bonus {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .tpromo1 {
+        font-size: 0.8rem;
+    }
+    .tpromo {
+        font-size: 1rem;
+    }
+    td {
+        font-size: 1rem;
+    }
+    .formules-container {
+        flex-direction: column;
+        height: 150vh;
+        
+    }
+    .formule1, .formule2, .formule3 {
+        height: 40vh;
+        width: 60vw;
+    }
+    .txt-bonus {
+        font-size: 0.6rem;
+    } 
+    .title-bonus {
+        font-size: 1.5rem;
+    } 
+    .basics-move {
+        font-size: 4rem;
+    }
+} 
+
+@media screen and (max-width: 1230px) {
+   .menu-content {
+    font-size: 1rem;
+   }
+   .gym, .arena {
+    font-size: 1.5rem;
+   }
+   .big-title {
+    font-size: 4rem;
+}
+.div1, .div2, .div3, .div4 {
+    font-size: 5rem;
+}
+
+}
+
+@media screen and (max-width:1111px){
+    .salleInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .info1, .info2, .info3 {
+    padding: 2rem;
+    }
+    .photoSalle {
+        height: 50vh;
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    .promo {
+     display: none;
+    }
+    .title-bonus {
+        font-size: 1rem;
+    }
+    .basics-move {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .big-title {
+        font-size: 3rem;
+    }
+    .div1, .div2, .div3, .div4 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .concept {
+     font-size: 1rem;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        }
+        .div1, .div2, .div3, .div4 {
+            height: 50vh;
+        }
+        .photoSalle {
+            height: 40vh;
+        }
+        td {
+            font-size: 0.6rem;
+        }
+        .bonus-container{
+            flex-direction: column;
+            height: 200vh;
+        }
+        .tv-container {
+            width: 50vw;
+            height: 40vh;
+        }
+        .basics-move{
+            font-size: 2rem;
+        }
+}
+
+
+@media screen and (max-width: 600px) {
+    .concept {
+     font-size: 0.7rem;
+    } 
+    .gym, .arena {
+        font-size: 1rem;
+    }
+    .no1, .pain, .no2, .gain {
+        font-size: 7rem;
+    }
+    .menu-content {
+        font-size: 0.7rem;
+    }
+    .big-title {
+        font-size: 2rem;
+    }
+    .photoSalle {
+        display: none;
+    }
+    .info1{
+        font-size: 0.7rem;
+    }
+    .basics-move{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .concept {
+     font-size: 0.5rem;
+    }
+    .no1, .pain, .no2, .gain {
+        font-size: 5rem;
+}
+.big-title {
+    font-size: 1.5rem;
+}
+.info1 {
+    font-size: 0.5rem;
+}
+td {
+    font-size: 0.4rem;
+}
+.tformule{
+    font-size: 1rem;
+}
+.txt-bonus {
+    font-size: 0.5rem;
+}
+.basics-move{
+    font-size: 1rem;
+}
+}
+
+
+
